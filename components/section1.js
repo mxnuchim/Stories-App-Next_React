@@ -12,7 +12,7 @@ import Error from './_child/error';
 import { heroData } from '../utils/data';
 import { useState } from 'react';
 
-export default function section1() {
+export default function Section1() {
   const data = heroData;
 
   const [isLoading, setIsLoading] = useState(false);

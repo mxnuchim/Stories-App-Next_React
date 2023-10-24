@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { fetchStories } from '../lib/fetcher';
 import { formatDate } from '../lib/helper';
 
-export default function section2() {
+export default function Section2() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [data, setData] = useState([]);
@@ -42,7 +42,7 @@ export default function section2() {
         <Spinner />
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14">
-          {data.map((value, index) => (
+          {data?.map((value, index) => (
             <Post data={value} key={index}></Post>
           ))}
         </div>
