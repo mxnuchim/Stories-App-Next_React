@@ -66,7 +66,7 @@ function Post({ data }) {
   return (
     <div className="item">
       <div className="images">
-        <Link href={url}>
+        <Link href={url} target={'_blank'}>
           <a>
             <Image src={image} className="rounded" width={500} height={350} />
           </a>
@@ -74,7 +74,7 @@ function Post({ data }) {
       </div>
       <div className="info flex justify-center flex-col py-4">
         <div className="cat">
-          <Link href={url}>
+          <Link href={url} target={'_blank'}>
             <a className="text-orange-600 capitalize hover:text-orange-800">
               {section ?? subsection}{' '}
             </a>
@@ -84,7 +84,7 @@ function Post({ data }) {
           </a>
         </div>
         <div className="title">
-          <Link href={url}>
+          <Link href={url} target={'_blank'}>
             <a className="text-xl font-bold text-gray-800 hover:text-gray-600">
               {title}
             </a>
